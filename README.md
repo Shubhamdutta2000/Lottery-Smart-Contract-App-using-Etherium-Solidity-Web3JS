@@ -10,6 +10,8 @@
     - Wait for the manager to pick the winner
 
 ## How to run Locally
+- Add you own mnemonicPhrase to .env file of etherium folder
+- Then run these command to start the application
 
 ```
     # Compile Solidity
