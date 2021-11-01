@@ -1,0 +1,27 @@
+{
+  "name": "lottery-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compile.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "compile": "node compile.js",
+    "deploy": "node --experimental-json-modules deploy.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "dotenv": "^10.0.0",
+    "fs-extra": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.0.2",
+    "solc": "^0.8.6",
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
