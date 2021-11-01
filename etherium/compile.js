@@ -6,6 +6,8 @@ import solc from "solc";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // build path in src of client path
+// Reference Link: https://stackoverflow.com/questions/30845416/how-to-go-back-1-folder-level-with-dirname
+
 const srcClientPath = path.resolve(__dirname, '../client/src');
 const buildPath = path.resolve(srcClientPath, "build");
 fs.removeSync(buildPath); // remove build path completely including content inside it
