@@ -26,7 +26,7 @@
     npm start
 ```
 
-- Add Deployed Contract Address (get address from console after deploying the contract) to the .env of src folder in client folder
+- Add Deployed Contract Address (get address from console after deploying the contract) to the .env of client folder
 
 ## Tech Stack
 
