@@ -3,7 +3,7 @@ import lotteryCompiled from "./build/Lottery.json"
 
 // Use contract's abi and address to create local contract instance using web3 library
 
-const contractAddress = "0x144d71b84b873b0B1f203ceadbb41C09a575867A";
+const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
 
 // - exports complete copy of our deployed lottery contract which we are work with react
 // - We are going to interact with deployed contract
