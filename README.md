@@ -4,10 +4,25 @@
 
 ## How to use
 
-    - User have to install Metamask browser extension
+    - User have to install Metamask browser extension and add some test coin in thei Rinbey test network
     - Then connect the site with Metamask and then refresh the page
     - Then User have to give some amount of ether to enter to the lottery contract for trying their luck
     - Wait for the manager to pick the winner
+
+## Run Locally
+
+```
+    # Compile Solidity
+    npm run compile
+
+    # Deploy Solidity
+    npm run deploy
+
+    # Start client server
+    cd client
+    npm start
+
+```
 
 ## Tech Stack
 
@@ -21,6 +36,7 @@
 - ### For client-side
   - React
   - Web3 library
+  - Metamask
 
 ## Demo
 
