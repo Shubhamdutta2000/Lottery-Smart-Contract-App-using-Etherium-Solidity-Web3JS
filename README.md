@@ -10,21 +10,23 @@
     - Wait for the manager to pick the winner
 
 ## How to run Locally
+
 - Add you own mnemonicPhrase to .env file of etherium folder
 - Then run these command to start the application
 
 ```
-    # Compile Solidity
+    # Compile Contract
     npm run compile
 
-    # Deploy Solidity
+    # Deploy Contract
     npm run deploy
 
     # Start client server
     cd client
     npm start
-
 ```
+
+- Add Deployed Contract Address (get address from console after deploying the contract) to the .env of src folder in client folder
 
 ## Tech Stack
 
