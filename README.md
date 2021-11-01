@@ -9,7 +9,7 @@
     - Then User have to give some amount of ether to enter to the lottery contract for trying their luck
     - Wait for the manager to pick the winner
 
-## Run Locally
+## How to run Locally
 
 ```
     # Compile Solidity
