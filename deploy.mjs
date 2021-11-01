@@ -1,6 +1,6 @@
 import HDWalletProvider from "@truffle/hdwallet-provider";
 import Web3 from "web3";
-import lotteryCompile from "./compile.js";
+import lotteryCompile from "./build/Lottery.json";
 import dotenv from "dotenv";
 dotenv.config();
 
