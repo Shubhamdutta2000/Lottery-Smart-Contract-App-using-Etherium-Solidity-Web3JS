@@ -7,16 +7,26 @@ dotenv.config();
 const mnemonicPhrase = process.env.mnemonicPhrase;
 
 // By default, the HDWalletProvider will use the address of the first address that's generated from the mnemonic
-const provider = new HDWalletProvider({
-  mnemonic: {
-    phrase: mnemonicPhrase,
-  },
-  // get from infura api
-  providerOrUrl:
-    "https://rinkeby.infura.io/v3/195ff528807b4c438b0b1c97f8156886",
-});
+// const provider = new HDWalletProvider({
+//   mnemonic: {
+//     phrase: mnemonicPhrase,
+//   },
+//   // get from infura api
+//   providerOrUrl:
+//     "https://rinkeby.infura.io/v3/195ff528807b4c438b0b1c97f8156886",
+// });
 
-const web3 = new Web3(provider);
+// const web3 = new Web3(provider);
+
+
+// For conncecting with Ganache with the help of Infura API
+const privateKeys = [
+  "1929b6425dd15a5ee524214f737657b53150871f51898f7b90d3a2066951ef9e",
+  "d85e8e110df0e98a2924c6e94ce19e1a3205647acf519a5b39d6fe4938a7fc1a"
+]
+const ganacheProvider = new HDWalletProvider(privateKeys, "http://127.0.0.1:7545", 0, 2)
+const web3 = new Web3(ganacheProvider);
+
 
 const deploy = async () => {
   const accounts = await web3.eth.getAccounts();

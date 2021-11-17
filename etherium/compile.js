@@ -45,7 +45,7 @@ const lotteryCompile = output.contracts["Lottery.sol"]["Lottery"];
 // Write out new file for contract  (i.e. Lottery ) and save the file in .json format
 // and give the actual output content to each contract as 2nd param to fs.outputJSONSync
 fs.outputJSONSync(
-  path.resolve(buildPath, "Lottery" + ".json"),
+  path.resolve(buildPath, "Lottery.json"),
   lotteryCompile
 );
 
